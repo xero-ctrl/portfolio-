@@ -1,0 +1,94 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #075559;
+    color: #EBDECE;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#home {
+  margin: 10em 0 0 0;
+}
+#about {
+  margin: 10em 0 0 0;
+}
+#projects {
+  margin: 10em 0 0 0;
+}
+#contact {
+  margin: 10em 0 0 0;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #DFBCBC;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Hidden Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Hidden by default */
+    width: 250px;
+    height: 100vh;
+    background: #0D6E74;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    text-align: left;
+    padding-top: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EBDECE;
+    font-size: 18px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Show navbar when active */
+nav.active {
+    right: 0;
+}
+
+/* Page Container */
+#container {
+    margin-top: 50px;
+}
+
+.page {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page.active {
+    display: block;
+    opacity: 1;
+}
